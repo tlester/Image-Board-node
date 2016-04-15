@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- TODO:  Fix title so that it's subpage - main app -->
+    <title>{{title}} - {{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/css/bootstrap.min.css' />
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header col-md-3">
+        <a href="/" class="navbar-brand">Image Board</a>
+      </div>
+      <div class="navbar-header col-md-9">
+        <ul class="nav navbar-nav pull-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tags</a>
+          </li>
+          <!-- {% if login_session['username'] %} -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">New Image</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+          <li class="nav-item">
+          <img src="#" class="navbar-brand" />
+          </li>
+          <!--{% else %}-->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <!-- {% endif %} -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+    {{{body}}}
+  </body>
+</html>
