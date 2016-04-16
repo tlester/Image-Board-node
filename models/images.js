@@ -6,9 +6,9 @@ var imagesSchema = new Schema({
     description: String,
     tags: Array,
     user: {
-        type: Schema.ObjectID,
+        type: Schema.ObjectId,
         ref: 'users'
     }
 });
 
-mongoose.model('users', userSchema)
+mongoose.model('images', imagesSchema)
