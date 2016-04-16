@@ -1,14 +1,13 @@
 var express = require('express');
+var mongoose = require('mongoose');
 var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+    mongoose.model('images').find(function(err, images) {
+        res.render('index', {images: images});
+    });
 });
 
-/* GET /test page. */
-router.get('/test', function(req, res, next) {
-  res.render('index', { title: 'Test' });
-});
 
 module.exports = router;

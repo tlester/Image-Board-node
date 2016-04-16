@@ -1,7 +1,15 @@
 
-<!-- Build masonry -->
 <div class="container">
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-
+    <!-- Build masonry -->
+    <div class="masonry">
+        {{#each images}}
+            <div class="item">
+                <a href="#"> <!-- Should be link to image details -->
+                <img src="{{this.link}}" class="img-responsive"/>
+                </a>
+                <p><strong>{{this.name}}</strong></p>
+                <br />
+            </div>
+        {{/each}}
+    </div>
 </div>

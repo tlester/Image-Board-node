@@ -36,6 +36,8 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+
+console.log('anal');
 // error handlers
 
 // development error handler
