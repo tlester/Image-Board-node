@@ -1,4 +1,4 @@
-var compression = require('compression');
+// var compression = require('compression');
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(compression());
+// app.use(compression());
 app.use('/', routes);
 app.use('/users', users);
 
