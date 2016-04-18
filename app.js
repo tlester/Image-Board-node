@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // app.use(compression());
 
-app.use(require('./controllers'))
+app.use(require('./controllers'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -35,7 +35,6 @@ app.use(function(req, res, next) {
 });
 
 
-console.log('anal');
 // error handlers
 
 // development error handler

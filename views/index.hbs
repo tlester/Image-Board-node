@@ -1,10 +1,9 @@
-
 <div class="container">
     <!-- Build masonry -->
     <div class="masonry">
         {{#each images}}
             <div class="item">
-                <a href="#"> <!-- Should be link to image details -->
+                <a href="/image/{{this.id}}">
                 <img src="{{this.link}}" class="img-responsive"/>
                 </a>
                 <p><strong>{{this.name}}</strong></p>

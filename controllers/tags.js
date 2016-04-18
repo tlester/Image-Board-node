@@ -3,13 +3,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 
 
-/* Add additional Controller Here */
-// router.use('/animals', require('./animals'))
-// router.use('/cars', require('./cars'))
-
-router.use('/tags', require('./tags'));
-
-/* GET home page. */
+/* GET main tags page. */
 router.get('/', function(req, res, next) {
     mongoose.model('images').find(function(err, images) {
         res.render('index', {images: images});
