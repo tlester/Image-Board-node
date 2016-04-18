@@ -1,6 +1,12 @@
 var express = require('express');
-var mongoose = require('mongoose');
 var router = express.Router();
+var mongoose = require('mongoose');
+
+
+/* Add additional Controller Here */
+// router.use('/animals', require('./animals'))
+// router.use('/cars', require('./cars'))
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -8,6 +14,5 @@ router.get('/', function(req, res, next) {
         res.render('index', {images: images});
     });
 });
-
 
 module.exports = router;
